@@ -30,7 +30,7 @@ var miami2=new google.maps.LatLng(25.8616798, -80.20179022000000);
 var miami3=new google.maps.LatLng(25.7616798, -80.31179023000000);
 var locations = [miami1,miami2,miami3]
 
-  var rect=new google.maps.Polygon({
+  var tri=new google.maps.Polygon({
     path:locations,
     strokeColor:"#0000FF",
     strokeOpacity:0.8,
@@ -39,7 +39,7 @@ var locations = [miami1,miami2,miami3]
     fillOpacity:0.4
   });
   
-  rect.setMap(map);
+  tri.setMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
