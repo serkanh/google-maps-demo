@@ -22,7 +22,8 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map'),mapOptions);
 
   marker = new google.maps.Marker({
-    position:mapOptions.center
+    position:mapOptions.center,
+    icon:'urban4m.png'
   })
 
   marker.setMap(map);
